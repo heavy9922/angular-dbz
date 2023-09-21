@@ -6,7 +6,7 @@
     "start": "ng serve -o",
     "build": "ng build",
     "build:href": "ng build --base-href ./",
-    "deploy": "yarn delete:docs &&  yarn build && yarn build:href && yarn save:docs && git commit -am 'development' && git push origin master",
+    "deploy": "yarn delete:docs &&  yarn build && yarn build:href && yarn save:docs && git add . && git commit -am 'development' && git push origin master",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "delete:docs": "del docs",
